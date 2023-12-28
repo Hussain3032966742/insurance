@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #e3fefe;
+   
+    
+    
+}
+.middle{
+    height: 450px;
+    width: 450px;
+    background-image: url(../image/watermark.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+    margin-top: 100px;
+    margin-right: 350px;
+}
+    header{
+        height: 50px;
+        background-color: #EFEFEF;
+    }
+    aside{
+        height: 700px;
+        width: 350px;
+        background-color: #f7f7f7;
+        float: left;
+    }
+    h4{
+        text-align: left;
+       
+        padding-top: 0px;
+        padding-left: 15px;
+    }
+    
+    input{
+        float: left;
+        margin-left: 400px;
+        height: 30px;
+        font-size: 18px;
+        border: 2px solid rgb(114, 114, 197);
+    }
+    select{
+        height: 30px;
+        margin-left: 50px;
+        height: 30px;
+        font-size: 18px;
+        border: 2px solid rgb(114, 114, 197);
+    }
+    .call{
+        height: 25px;
+        font-size: 20px;
+    }
+    .dash{
+        height: 22px;
+        background-color: #05b9b7;
+        color: white;
+    }
+    .acount{
+        background-color: #EFEFEF;
+        margin-top: 2px;
+        height: 45px;
+    }
+    .callog{
+        height: 50px;
+        width: 80px;
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    aside img{
+        height: 50px;
+        width: 50px;
+        float: left;
+        margin-top: 12px;
+        margin-left: 15px;
+
+    }
+    h6{
+        text-align: left;
+        padding-left: 20px;
+        font-size: 15px;
+    }

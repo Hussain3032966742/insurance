@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="./signup.css">
+</head>
+<body><center>
+<div id="main-container" class="container-fluid">
+    <div class="genral">
+        <div class="left">
+            <h1>Welcome</h1>
+            <p class="para">Create new account for Free. <br> &nbsp; Enoy and learn with us! </p>
+            <button onclick="login()" class="btn"><a href="login.html">Login</a></button>
+        </div>
+        <div class="right">
+            <h2>Login</h2>
+            <label for="name" class="label1">complete name</label>
+            <input id="name" type="text" placeholder="Enter your full name" class="input"><br>
+             <label for="Email" class="label2">Email address</label>
+            <input id="email" type="email" placeholder="Enter your email" class="input2"><br>
+            <label class="label2" for="password">Password</label>
+            <br>
+            <input id="password" type="password" placeholder="Create new password" class="input3"> 
+            
+            <br>
+            <label for="password" class="label4">confirm password</label>
+            <input id="password2" type="password" placeholder="rewrite your password" class="input4"><br>
+            
+           <button class="btn2" onclick="sign()">Sign up</button>
+        </div>
+        <p id="erorr"></p>
+    </div></center>
+</div>
+    <script>
+        function sign(){
+
+        
+        var username = document.getElementById("name").value
+        var usermail = document.getElementById("email").value
+        var userpass = document.getElementById("password").value
+        var userpass2 = document.getElementById("password2").value
+            if(username==""||usermail=="" ||userpass=="" ||userpass2==""){
+            alert("fill up the input")
+            }else if(userpass!=userpass2){ alert("password not matched")
+
+            }
+            else{
+                localStorage.setItem("Name", username)
+                localStorage.setItem("Email", usermail)
+                localStorage.setItem("Password", userpass)
+                window.open("main.html")
+            }
+    }
+    </script>
+
+     <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+  integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+</script>
+</body>
+</html>

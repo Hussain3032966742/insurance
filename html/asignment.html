@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            height: 400px;
+            width: 500px;
+
+            background-image: url(./image/back.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            box-shadow: 20px 20px 20px rgb(15, 15, 15);
+            border-radius: 40px;
+            margin-top: 50px;
+            padding: 30px;
+        }
+
+        #para {
+            font-size: 25px;
+            color: aliceblue;
+        }
+        #back{
+            height: 300px;
+            width: 400px;
+            background-color: rgba(277, 20, 20, 0.1);
+        }
+    </style>
+</head>
+
+<body> <center>
+    <div id="box">
+        <div id="back" onmouseover="bgback()" onmouseleave="nobg()">
+        <p id="para">
+            life, living matter and, as such, matter that shows certain attributes that include responsiveness, growth,
+            metabolism, energy transformation, and reproduction. Although a noun, as with other defined entities, the
+            word life might be better cast as a verb to reflect its essential status as a process. Life comprises
+            individuals, living beings, assignable to groups (taxa)......
+        </p></div>
+
+    </div>
+    <button onclick="more()" ondblclick="less()"> <p id="seeless">see more</p> </button></center>
+
+    <script>
+        function more() {
+            document.getElementById("box").style.height = ("600px")
+            document.getElementById("box").style.width = ("650px")
+            document.getElementById("para").innerHTML = ("life, living matter and, as such, matter that shows certain attributes that include responsiveness, growth, metabolism, energy transformation, and reproduction. Although a noun, as with other defined entities, the word life might be better cast as a verb to reflect its essential status as a process. Life comprises individuals, living beings, assignable to groups (taxa)life, living matter and, as such, matter that shows certain attributes that include responsiveness, growth, metabolism, energy transformation, and reproduction. Although a noun, as with other defined entities, the word life might be better cast as a verb to reflect its essential status as a process. Life comprises individuals, living beings, assignable to groups (taxa)life, living matter and, as such, matter that shows certain attributes that include responsiveness, growth, metabolism, energy transformation, and reproduction. Although a noun, as with other defined entities, the word life might be better cast as a verb to reflect its essential status as a process. Life comprises individuals, living beings, assignable to groups (taxa)")
+            document.getElementById("back").style.height = ("550px")
+            document.getElementById("back").style.width = ("650px")
+
+        }
+        function less() {
+            document.getElementById("box").style.height = ("400px")
+            document.getElementById("box").style.width = ("500px")
+            document.getElementById("back").style.height = ("300px")
+            document.getElementById("back").style.width = ("400px")
+            document.getElementById("para").innerHTML = ("life, living matter and, as such, matter that shows certain attributes that include responsiveness, growth, metabolism, energy transformation, and reproduction. Although a noun, as with other defined entities, the word life might be better cast as a verb to reflect its essential status as a process. Life comprises individuals, living beings, assignable to groups (taxa).....")
+            document.getElementById("seeless").innerHTML = ("see more")
+
+        }
+        function bgback(){
+            document.getElementById ("back").style.backgroundColor = ("rgba(7, 10, 10, 0.5)")
+        }
+        function nobg(){
+            document.getElementById("seeless").innerHTML = ("see less")
+            document.getElementById ("back").style.backgroundColor = ("rgba(27, 200, 20, 0.1)")
+            
+        }
+
+
+    </script>
+
+</body>
+
+</html>

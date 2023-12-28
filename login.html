@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/assignement.css">
+</head>
+<body><center>
+    <div class="genral">
+        <div class="left">
+            <h1>Welcome</h1>
+            <p class="para">Already have account. click on the </button>  </p>
+            <button onclick="sign()" class="btn"><a href="sign.html">Sign up </a></button>
+        </div>
+        <div class="right">
+            <h2>Login</h2>
+            <label for="Email" class="label1">Email address</label>
+            <input id="email" type="email" placeholder="Enter your email" class="input"><br>
+            <label class="label2" for="password">Password</label>
+            <br>
+            <input id="password" type="password" placeholder="Enter your password" class="input2">
+            <button class="btn2" onclick="login()">Login</button>
+        </div>
+    </div></center>
+    <script>
+        function login(){
+        var usermail = document.getElementById("email").value
+        var userpass = document.getElementById("password").value
+        var localmail= localStorage.getItem("Email")
+        var localpass= localStorage.getItem("Password")
+        
+            if(usermail=="" ||userpass=="" ){
+            alert("fill up the input")
+            }else if(localmail==usermail && localpass==userpass
+                
+            ){window.open("main.html")}
+            else{
+            
+                alert("wrong email or password")
+            }
+        }
+    </script>
+</body>
+</html>

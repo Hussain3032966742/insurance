@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" id="no">
+
+<head id="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <img class="logo" src="./image/eagle.png" alt="">
+        <h3>Rahil University</h3>
+        <center></center>
+        <div class="mar">
+            <marquee behavior="" direction="" style="font-size: 30px; color: rgb(46, 41, 36); padding-bottom: 10px;">
+                Rahil university</marquee>
+        </div>
+        </center>
+
+    </header>
+    <MENU>
+        <NAv class="home">
+            <a class="all" href="">Home</a>
+            <a class="all" href="">About</a>
+            <a class="all" href="">contuct us</a>
+            <a class="all" href="">Ask Question</a>
+            <button onclick="search">search</button>
+            <input type="search" placeholder="type her to find it out">
+        </NAv>
+    </MENU>
+
+    <div class="section">
+        <center>
+            <i class="fa fa-vcard" style="font-size: 105px; color: antiquewhite;"></i>
+        </center>
+        <button class="inp">Email</button>
+        <input class="puts" type="email" placeholder="Enter your Email address">
+        <br><br>
+        <button class="inp">Password</button>
+        <input class="puts" type="password" placeholder="password">
+        <center>
+            <button class="login">Login</button>
+        </center>
+        <center>
+            <div id="box">
+                <div id="back" onmouseover="bgback()" onmouseleave="nobg()">
+                    <h2><b><u style="color: aqua;">Why does higher education matter? </u></b><br></h2>
+                    <p id="para">
+                        
+                        Higher education is a rich cultural and scientific asset which enables personal development and
+                        promotes economic, technological and social change. It promotes the exchange of knowledge,
+                        research and innovation and equips students with the skills needed to meet ever changing labour
+                        markets....
+                    </p>
+                </div>
+                
+
+
+            </div>
+            <button onclick="more()" ondblclick="less()" class="bt2">
+                <p id="seeless">see more</p>
+            </button>
+        </center>
+
+       
+
+
+
+    </div>
+
+    <aside>
+        <a href="" class="lesson">HTML</a>
+        <div class="pra">
+            <p>HTML is the standard markup language for Web pages.
+
+                With HTML you can create your own Website.
+
+                HTML is easy to learn - You will enjoy it!</p>
+        </div>
+        <br>
+        <a href="" class="lesson">CSS</a>
+        <div class="pra">
+            <p>CSS is the language we use to style an HTML document.
+
+                CSS describes how HTML elements should be displayed.
+
+                This tutorial will teach you CSS from basic to advanced.</p>
+        </div>
+        <a href="" class="lesson">JAVA SCRIPT</a>
+        <div class="pra">
+            <p>
+                it's most popular programming language.
+
+                JavaScript is the programming language of the Web.
+
+                JavaScript is easy to learn.
+
+                This tutorial will teach you JavaScript from basic to advanced.
+            </p>
+        </div><br><br><br>
+        <a href="" class="lesson">PYTHON</a>
+        <div class="pra">
+            <p>
+                Python is a popular programming language.
+
+                Python can be used on a server to create web applications.
+            </p>
+        </div>
+        <a href="" class="lesson">C++</a>
+        <div class="pra">
+            <p>
+                C++ is a popular programming language.
+
+                C++ is used to create computer programs, and is one of the most used language in game development.
+            </p>
+        </div>
+    </aside>
+
+    
+    <script>
+            
+        function more() {
+            document.getElementById("box").style.height = ("630px")
+            document.getElementById("box").style.width = ("650px")
+            document.getElementById("para").innerHTML = ("Why does higher education matter?   .Higher education is a rich cultural and scientific asset which enables personal development and promotes economic, technological and social change. It promotes the exchange of knowledge, research and innovation and equips students with the skills needed to meet ever changing labour markets. For students in vulnerable circumstances, it is a passport to economic security and a stable future. What is the current situation? Higher education has changed dramatically over the past decades with increasing enrolment, student mobility, diversity of provision, research dynamics and technology. Some 235 million students are enrolled in universities around the world – a number that has more than doubled in the last 20 years and is set to expand.Yet despite the boom in demand, the overall enrolment ratio is 40% with large differences between countries and regions. More than 6 million students are pursuing their further education abroad. And among the world’s more than 82 million refugees, only 5% of eligible youth are enrolled in higher education, whereas comparative figures for primary and secondary education are 68% and 34%, respectively (UNHCR). The COVID-19 pandemic further disrupted the way higher education was provided. ")
+
+            document.getElementById("para").style.textAlign = ("justify")
+            document.getElementById("back").style.height = ("650px")
+            document.getElementById("back").style.width = ("650px")
+
+        }
+        function less() {
+            document.getElementById("box").style.height = ("400px")
+            document.getElementById("box").style.width = ("500px")
+            document.getElementById("back").style.height = ("300px")
+            document.getElementById("back").style.width = ("400px")
+            document.getElementById("para").innerHTML = ("Higher education is a rich cultural and scientific asset which enables personal development and promotes economic, technological and social change. It promotes the exchange of knowledge,")
+            document.getElementById("seeless").innerHTML = ("see more")
+
+        }
+        function bgback() {
+            document.getElementById("back").style.backgroundColor = ("rgba(7, 10, 10, 0.5)")
+        }
+        function nobg() {
+            document.getElementById("seeless").innerHTML = ("see less")
+            document.getElementById("back").style.backgroundColor = ("rgba(27, 200, 20, 0.1)")
+
+        }
+        var name = prompt("user name")
+        var password = prompt("password")
+        if(name==("hussain") && password == 23)
+    alert("welcome")
+    else{
+        alert("erro")
+        document.getElementById ("no").innerHTML= ("sorry!!! make sure your username and your password are correct.")
+        
+    }
+    
+    
+
+
+    </script>
+
+
+
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <footer>
+        <i class="fa fa-facebook-square"
+            style="color: rgb(8, 124, 226); font-size: 80px; text-align: center; padding-top: 10px;"></i>
+        <i class="fa fa-instagram"
+            style="color: rgb(197, 12, 52); font-size: 80px; padding-top: 10px; padding-left: 30px;"></i>
+
+    </footer>
+    
+
+</body>
+
+</html>

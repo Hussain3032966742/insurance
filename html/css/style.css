@@ -1,0 +1,176 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: beige;
+    background-image: url(../image/desert.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    height: 130px;
+    background-color: aqua;
+    position: -webkit-sticky;
+   position: sticky;
+   top: 0px;
+}
+.logo{
+    float: left;
+    height: 130px;
+    width: 130px;
+}
+h3{
+    text-align: right;
+    padding-left: 15px;
+    font-size: 50px;
+    padding-top: 25px;
+    color: rgba(170, 73, 73, 0.1)
+}
+
+    
+    
+.home{
+    border: 3px solid black;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(261, 7, 7, 0.1);
+    
+}
+.all{
+    padding: 35px;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: beige;
+}
+.all:hover{
+   color: rgb(180, 125, 41);
+
+        }
+aside{
+    background-color: cadetblue;
+    height: 1000px;
+    width: 300px;
+    margin-top: 30px;
+    border-radius: 20px;
+    
+
+
+}
+.lesson{
+    display: list-item;
+    font-size: 30px;
+    padding-top: 15px;
+    padding-left: 10px;
+    text-decoration: none;
+color: aliceblue;
+
+}  
+.pra{
+    
+    height: 130px;
+    width: 100&;
+
+}
+.pra:hover{
+    background-color: aliceblue;
+    border-radius: 16px;
+}
+p{
+    font-size: 20px;
+}
+button{
+    height: 30px;
+    border-radius: 15px;
+    width: 60px;
+   float: center;
+    margin-left: 400px;
+}
+button:hover{
+    background-color: azure;
+}
+
+input{
+    height: 30px;
+    width: 300px;
+    border-radius: 15px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 10px;
+
+}
+.section{
+    background-color: rgba(161, 27, 7, 0.5);
+    height: 350px;
+    width: 600px;
+    float: right;
+    margin-right: 300px;
+    border-radius: 15px;
+    margin-top: 30px;
+
+}
+
+.inp{
+    margin-left: 40px;
+    width: 90px;
+    margin-top: 15px;
+}
+.puts{
+float: right;
+margin-right: 150px;
+
+}
+.login{
+    float: left;
+    margin-top: 20px;
+    margin-right: 70px;
+    background-color: blue;
+    width: 100px;
+
+}
+.mar{
+    height: 20px;
+    width: 900px;
+    float: right;
+    margin: 0px;
+    
+    
+}
+footer{
+        height: 100px;
+        width: 100%;
+        background-color: black;
+}
+#box {
+    height: 400px;
+    width: 500px;
+
+    
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-shadow: 20px 20px 20px rgb(15, 15, 15);
+    border-radius: 40px;
+    padding: 30px;
+    margin-top: 150px;
+}
+
+#para {
+    font-size: 25px;
+    color: aliceblue;
+    padding-top: 10px;
+    float: ;
+}
+#back{
+    height: 300px;
+    width: 400px;
+    background-color: rgba(277, 20, 20, 0.1);
+    border-radius: 30px;
+}
+.bt2{
+    height: 50px;
+    width: 90px;
+    background-color: rgb(179, 175, 175);
+
+    margin-top: 9px;
+}

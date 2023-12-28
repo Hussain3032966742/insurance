@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     button{
+        height: 30px;
+        width: 50px;
+     }
+    </style>
+</head>
+<body id="no">
+    
+<!-- <div class="img1"><img onmouseover="change()" onmouseout="another()" id="image" src="./image/map.PNG" alt=""></div><br> -->
+
+<!-- <button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button> -->
+
+<p id="demo">date</p>
+
+
+
+
+<button onclick="get()" ondblclick="undo()">DATE</button>
+
+<p id="date"></p>
+    <script>
+        const d= new Date
+        // document.getElementById("date").innerHTML = d;
+        function get(){
+            document.getElementById("demo").innerHTML= d;
+        }
+        function undo(){
+            document.getElementById("demo").innerHTML= ("click for date")
+        }
+       
+        var num = prompt("user Nmae")
+        var pas = parseInt(prompt("password"))
+        if(num==("hussain") && age >= 23)
+        alert("welcome")
+        else{
+            alert("try again")
+            document.getElementById("no").innerHTML= ('error')
+        }
+    </script>
+</body>
+</html>
